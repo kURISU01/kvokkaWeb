@@ -34,10 +34,10 @@
 
 }
 
-.header{
+.header {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 :root {
@@ -101,7 +101,7 @@ a {
 
 .navbar li:last-child {
     margin-right: 100px;
-} 
+}
 
 .navbar li a {
     color: #000000;
@@ -248,9 +248,7 @@ input[name="item"] {
     transform: scale(0.95);
 }
 
-.container-two {
-
-}
+.container-two {}
 
 .images {
     display: flex;
@@ -338,7 +336,7 @@ input[name="item"] {
     opacity: 1;
 }
 
-.HoverDivOne:hover ~ .BackImg1 .vectorOne {
+.HoverDivOne:hover~.BackImg1 .vectorOne {
     transform: translateY(100%);
 }
 
@@ -416,7 +414,7 @@ input[name="item"] {
     opacity: 1;
 }
 
-.HoverDivTwo:hover ~ .BackImg2 .vectorTwo {
+.HoverDivTwo:hover~.BackImg2 .vectorTwo {
     transform: translateY(-100%);
 }
 
@@ -460,7 +458,7 @@ input[name="item"] {
     color: var(--primary);
     transform: scale(0.95);
     font-weight: 500;
-} 
+}
 
 .BackImg2 {
     width: 54%;
@@ -506,14 +504,13 @@ input[name="item"] {
     height: 100%;
     z-index: 3;
     clip-path: polygon(53.5% 0, 54% 0, 46% 100%, 45.5% 100%);
-    pointer-events: none; 
+    pointer-events: none;
 }
 
 .container-three {
     display: flex;
-    position: relative;
-    justify-content: space-between;
     height: 740px;
+    
 }
 
 .pictures {
@@ -524,11 +521,12 @@ input[name="item"] {
 }
 
 .infoText {
-    margin-left: 56px;
+    left: 56px;
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 56px;
 
 }
 
@@ -543,6 +541,7 @@ input[name="item"] {
     font-family: Roboto;
     font-size: 1rem;
     font-weight: 400;
+
 }
 
 .text {
@@ -557,6 +556,7 @@ input[name="item"] {
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
+    margin-top: 25px;
     width: 165px;
     height: 50px;
     border: 3px solid var(--primary);
@@ -570,10 +570,11 @@ input[name="item"] {
     color: #fff;
     transform: scale(0.95);
 }
+
 .backPicture {
     background-color: var(--primary);
     position: absolute;
-    margin-left: 135px;
+    margin-left: 12%;
     margin-top: 100px;
     z-index: 3;
 }
@@ -581,9 +582,112 @@ input[name="item"] {
 .mainPicture {
     background-color: var(--primary);
     position: absolute;
-    margin-left: 164px;
+    margin-left: 19%;
     margin-top: 130px;
     z-index: 4;
+}
+
+.container-four {
+    height: 498px;
+    width: auto;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    background-position: bottom left 70px, bottom right 140px;
+    background-image: url(/img/contactsBack1.svg), url(/img/contactsBack2.svg);
+    background-repeat: no-repeat;
+}
+
+.containerInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inputText {
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 43px;
+    padding-left: 30px;
+    text-indent: 10px;
+}
+
+.inputBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nameInp {
+    width: 415px;
+    height: 55px;
+    color: var(--primary);
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.phoneInp {
+    width: 415px;
+    height: 55px;
+    color: var(--primary);
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.agreementinfo {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.CheckInp {
+    margin: 0px 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.agreementText {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.agreementText>a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.sendBtn {
+    color: #FEFEFE;
+    font-family: Noto Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 175px;
+    height: 50px;
+    text-align: center;
+    background-color: transparent;
+    border: 3px solid #fff;
+    transition: 0.1s linear;
+}
+
+.sendBtn:hover {
+    background-color: #fff;
+    color: var(--primary);
+    font-weight: 500;
+    transform: scale(0.95);
 }
 
 

@@ -519,7 +519,6 @@ input[name="item"] {
     width: 50%;
     display: flex;
     justify-content: center;
-    background-color: #000000;
 }
 
 .infoText {

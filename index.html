@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Salesprodazha</title>
     <link rel="icon" type="images/x-icon" href="img/favicon.svg">
-
-
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 
 <body>
@@ -136,14 +135,73 @@
                     <input type="tel" id="i2" class="phoneInp" placeholder="Ваш телефон">
                     <div class="agreementinfo">
                         <input type="checkbox" id="ch1" class="CheckInp">
-                        <p class="agreementText">Соглашаюсь с  <a href="#">политикой конфиденциальности</a></p>
+                        <p class="agreementText">Соглашаюсь с <a href="#">политикой конфиденциальности</a></p>
                     </div>
                     <button class="sendBtn">ОТПРАВИТЬ</button>
 
                 </div>
             </div>
         </div>
+        <div class="container-five">
+            <div id="map" class="Map"></div>
+            <div class="containerMapInfo">
+                <h1 id="MapText">Контакты и юридическая информация</h1>
+                <div class="mapInfo">
+                    <div class="mapInfoContainerOne">
+                        <img class="placeInfoIcon" src="/img/mapIcon.svg">
+                        <p class="placeInfoText">121069, г. Москва, ул. Поварская, дом 23, строение 4</p>
+                        <img class="phoneInfoIcon" src="/img/phoneIcon.svg">
+                        <p class="phoneInfoText"><a href="#">+7 (495)258-6100</a></p>
+                        <img class="emailInfoIcon" src="/img/atIcon.svg">
+                        <p class="emailInfoText">info@sksbank.ru</p>
+                        <img class="timeInfoIcon" src="/img/timeIcon.svg">
+                        <p class="timeInfoText">Пн-Пт: 9:00 - 18:00</p>
+                    </div>
+                    <div class="mapInfoContainerTwo">
+                        <span class="Inn">ИНН:</span>
+                        <p class="InnHolder">7750005845</p>
+                        <span class="Bik">БИК:</span>
+                        <p class="BikHolder">044525247</p>
+                        <span class="Okpo">ОКПО:</span>
+                        <p class="OkpoHolder">29319716</p>
+                        <span class="Ogrn">ОГРН:</span>
+                        <p class="OgrnHolder">1137711000096 (05.07.2013)</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <p class="footerText">+7 (495)258-6100 | Банк "СКС" (ООО) | info@sksbank.ru</p>
+            <p class="footerText">Генеральная лицензия №3224 от 9 июля 2014 года </p>
+            <p class="footerText">Сведения о лицах, под контролем либо значительным влиянием которых находится кредитная
+                организация </p>
+            <p class="footerText">Раскрытие информации профессиональным участником рынка ценных бумаг </p>
+            <p class="footerText">Информация о максимальных процентных ставках по вкладам физических лиц</p>
+
+        </footer>
     </div>
+    <script type="text/javascript">
+        ymaps.ready(init);
+
+        function init() {
+            var myMap = new ymaps.Map("map", {
+                center: [51.737866, 36.192305],
+                zoom: 15,
+                controls: []
+            });
+
+            var myPlacemark = new ymaps.Placemark([51.737866, 36.192305], {
+                hintContent: 'Пушкинский',
+                balloonContent: 'Пушкинский'
+            }, {
+                'preset': 'islands#redIcon'
+            });
+            myMap.geoObjects.add(myPlacemark);
+
+        }
+    </script>
 </body>
 
 </html>

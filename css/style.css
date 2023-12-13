@@ -30,6 +30,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -89,7 +90,7 @@ a {
     list-style-type: none;
     padding-left: 0;
     margin-bottom: 0;
-    font-size: 1reem;
+    font-size: 1rem;
     font-family: Roboto;
     font-weight: 700;
 }
@@ -250,7 +251,6 @@ input[name="item"] {
     transform: scale(0.95);
 }
 
-.container-two {}
 
 .images {
     display: flex;
@@ -263,33 +263,6 @@ input[name="item"] {
 
 
 
-/* .btnOne {
-    position: absolute;
-    z-index: 5;
-    margin-left: 9%;
-    margin-top: 15%;
-    pointer-events: none; 
-} */
-
-/* .Btn {
-    z-index: 5;
-    font-size: 1rem;
-    font-family: Noto Sans;
-    font-weight: 400;
-    background-color: transparent;
-    padding: 16px 48px;
-    border: solid 3px;
-    border-color: #fff;
-    text-align: center;
-    cursor: pointer;
-    color: #fff;
-} */
-
-/* .Btn {
-    padding: 16px 48px;
-    background-color: transparent;
-    color: #fff;
-} */
 
 .BackImg1 {
     width: 54%;
@@ -468,7 +441,6 @@ input[name="item"] {
     background-image: url(/img/houseIsolatedInTheField.png);
     background-repeat: no-repeat;
     background-size: cover;
-    /* margin-left: -230px; */
     clip-path: polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
     top: 0;
     right: 0;
@@ -546,7 +518,6 @@ input[name="item"] {
 }
 
 .text {
-    /* height: 251px; */
     line-height: 27px;
     margin-bottom: 25px;
     width: 86%;
@@ -577,6 +548,8 @@ input[name="item"] {
     position: absolute;
     margin-left: 12%;
     margin-top: 100px;
+    width: 760px;
+    height: 510px;
     z-index: 3;
 }
 
@@ -585,6 +558,8 @@ input[name="item"] {
     position: absolute;
     margin-left: 19%;
     margin-top: 130px;
+    width: 760px;
+    height: 510px;
     z-index: 4;
 }
 
@@ -749,6 +724,14 @@ input[name="item"] {
     color: black;
 }
 
+.placeInfoText .br2 {
+    display: none;
+}
+
+.placeInfoText .br1 {
+    display: none;
+}
+
 .mapInfoContainerTwo {
     display: grid;
     grid-template-columns: 10% 90%;
@@ -784,7 +767,122 @@ footer {
 }
 
 
-@media (max-width: 1366px) {
+@media (max-width: 1685px) {
+    .mainPicture {
+        margin-left: 10%;
+        width: 650px;
+        height: 500px;
+    }
+
+    .backPicture {
+        margin-left: 3%;
+        width: 650px;
+        height: 500px;
+    }
+
+    #MapText {
+        font-size: 1.9rem;
+    }
+
+    .placeInfoText .br2 {
+        display: block;
+    }
+
+    .mapInfoContainerOne {
+        display: grid;
+        grid-template-columns: 6% 94%;
+        grid-template-rows: 40px 25px 25px 25px;
+        grid-column-gap: 19px;
+        grid-row-gap: 5px;
+        color: #000;
+        font-family: Roboto;
+        font-size: 1rem;
+        font-weight: 400;
+
+    }
+
+    .mapInfo {
+        display: grid;
+        width: 100%;
+        padding-left: 107px;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+        grid-column-gap: 10px;
+
+    }
+
+    .mapInfoContainerTwo {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: repeat(4, 30px);
+        grid-column-gap: 19px;
+        grid-row-gap: 5px;
+        color: #000;
+        font-family: Roboto;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .positionTwo {
+        position: absolute;
+        right: 0;
+        margin-right: 24%;
+        margin-top: 32%;
+        display: block;
+        justify-content: center;
+    }
+
+    .positionOne {
+        margin-left: 17%;
+        margin-top: 32%;
+        display: block;
+        justify-content: center;
+    }
+
+
+}
+
+@media (max-width: 1617px) {
+    .placeInfoText .br1 {
+        display: block;
+    }
+
+    .mapInfoContainerOne {
+        grid-template-rows: 60px 25px 25px 25px;
+    }
+
+}
+
+@media (max-width: 1485px) {
+    .mapInfoContainerOne {
+        grid-template-rows: 60px 25px 25px 25px;
+    }
+
+    #MapText {
+        font-size: 1.7rem;
+    }
+
+}
+
+
+@media (max-width: 1370px) {
+    .container-one-text {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: var(--primary);
+        font-family: Noto Sans;
+
+    }
+
+    .container-one-info {
+        margin-left: 100px;
+        display: block;
+        position: absolute;
+        z-index: 2;
+        top: 40%;
+    }
+
+
     .slider {
         position: relative;
         width: 100%;
@@ -801,8 +899,8 @@ footer {
     }
 
     .logo {
-        width: 35px;
-        height: 41px;
+        width: 36px;
+        height: 42px;
 
     }
 
@@ -826,13 +924,387 @@ footer {
         bottom: -29px;
     }
 
+    .imgOneText {
+
+        font-size: 1.5rem;
+    }
+
+    .imgTwoText {
+
+        font-size: 1.5rem;
+
+    }
+
+    .mainPicture {
+        margin-left: 10%;
+        width: 553px;
+        height: 435px;
+        margin-top: 150px;
+    }
+
+    .backPicture {
+        margin-left: 2%;
+        width: 553px;
+        height: 435px;
+        margin-top: 120px;
+    }
+
+    .infoText {
+        left: 56px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 40px;
+        margin-top: -5%;
+
+    }
+
+    .h1 {
+        font-size: 2.2rem;
+        font-family: Noto Sans;
+        font-weight: 500;
+        padding-bottom: 10px;
+    }
+
+    .aboutBtn {
+        font-family: Noto Sans;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 2px;
+        width: 165px;
+        height: 50px;
+        border: 3px solid var(--primary);
+        background-color: transparent;
+        color: var(--primary);
+        transition: 0.1s linear;
+    }
+
+    .text {
+        /* height: 251px; */
+        line-height: 25px;
+        margin-bottom: 20px;
+        width: 86%;
+    }
+
+    .positionTwo {
+        position: absolute;
+        right: 0;
+        margin-right: 18%;
+        margin-top: 35%;
+        display: block;
+        justify-content: center;
+    }
+
+    .positionOne {
+        margin-left: 13%;
+        margin-top: 35%;
+        display: block;
+        justify-content: center;
+    }
+
+    .mapInfo {
+        display: grid;
+        width: 100%;
+        padding-left: 107px;
+        grid-template-columns: 1fr;
+        align-content: center;
+        grid-column-gap: 10px;
+
+    }
+
+    .placeInfoText .br2 {
+        display: none;
+    }
+
+    .placeInfoText .br1 {
+        display: none;
+    }
+
+    .inputText {
+        text-align: center;
+        font-family: Muller;
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 43px;
+        padding-left: 30px;
+        text-indent: 10px;
+    }
+
+    .container-four {
+        height: 498px;
+        width: auto;
+        background-color: var(--primary);
+        display: flex;
+        justify-content: center;
+        background-position: bottom left 15px, bottom right 40px;
+        background-image: url(/img/contactsBack1.svg), url(/img/contactsBack2.svg);
+        background-repeat: no-repeat;
+    }
+
+    .mapInfoContainerOne {
+        display: grid;
+        grid-template-columns: 6% 94%;
+        grid-template-rows: repeat(4, 15px);
+        grid-column-gap: 10px;
+        grid-row-gap: 25px;
+        color: #000;
+        font-family: Roboto;
+        font-size: 1rem;
+        font-weight: 400;
+
+    }
+
+    .mapInfoContainerTwo {
+        display: grid;
+        grid-template-columns: 7% 90%;
+        grid-template-rows: repeat(4, 25px);
+        grid-column-gap: 12px;
+        grid-row-gap: 15px;
+        color: #000;
+        font-family: Roboto;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 4%;
+    }
+
+    .Map {
+        width: 50%;
+        height: 489px;
+    }
+
+    #MapText {
+        width: 100%;
+        padding-left: 107px;
+        left: 0;
+        text-align: left;
+        font-family: Noto Sans;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 31px;
+        color: var(--primary);
+        margin-top: 59px;
+    }
+
+    .containerMapInfo {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: initial;
+    }
+
 
 }
 
-@media (max-width: 1024px) {
-    .container {
-        margin: 0px 55px 0px 40px;
+@media (max-width: 1252px) {
+    .positionOne {
+        margin-left: 10%;
+        margin-top: 20%;
+        display: block;
+        justify-content: center;
     }
+
+    .positionTwo {
+        position: absolute;
+        right: 0;
+        margin-right: 15%;
+        margin-top: 38%;
+        display: block;
+        justify-content: center;
+    }
+
+    .mainPicture {
+        margin-left: 10%;
+        width: 460px;
+        height: 420px;
+        margin-top: 180px;
+    }
+
+    .backPicture {
+        margin-left: 2%;
+        width: 460px;
+        height: 420px;
+        margin-top: 150px;
+    }
+
+    .h1 {
+        font-size: 2.2rem;
+        font-family: Noto Sans;
+        font-weight: 500;
+        padding-bottom: 5px;
+    }
+
+    .infoText {
+        left: 56px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 40px;
+        margin-top: 0%;
+
+    }
+
+}
+
+@media (max-width: 1090px) {
+    .positionOne {
+        margin-left: 10%;
+        margin-top: 18%;
+        display: block;
+        justify-content: center;
+    }
+
+    .positionTwo {
+        position: absolute;
+        right: 0;
+        margin-right: 24%;
+        margin-top: 18%;
+        display: block;
+        justify-content: center;
+    }
+
+    .HoverDivOne {
+        position: absolute;
+        width: 54%;
+        height: 332px;
+        z-index: 5;
+        clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+        background-color: rgba(24, 43, 90, 0.9);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .HoverDivTwo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55%;
+        height: 332px;
+        z-index: 2;
+        background-color: rgba(24, 43, 90, 0.9);
+        clip-path: polygon(16% 0, 100% 0, 100% 100%, 0% 100%);
+        overflow: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .images {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 322px;
+    }
+
+    .vectorOne {
+        background-image: url(/img/vectorTwo.svg);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 88%;
+        height: 56px;
+        z-index: 2;
+        background-color: var(--primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(0);
+        transition: transform 0.3s ease;
+
+    }
+
+    .vectorTwo {
+        background-image: url(/img/vectorTwo.svg);
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 88%;
+        height: 56px;
+        z-index: 2;
+        background-color: var(--primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(0);
+        transition: transform 0.3s ease;
+    }
+
+    .imgOneText {
+
+        z-index: 3;
+        bottom: 0;
+        left: 0;
+        font-size: 1rem;
+        font-family: Noto Sans;
+        font-weight: 400;
+        color: #fff;
+
+    }
+
+    .imgTwoText {
+        z-index: 3;
+        top: 0;
+        right: 0;
+        font-size: 1rem;
+        font-family: Noto Sans;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    .Text-one {
+        z-index: 5;
+        font-size: 1.7rem;
+        font-family: Noto Sans;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 25px;
+    }
+
+    .BtnOne {
+        font-size: 0.8rem;
+        font-family: Noto Sans;
+        font-weight: 400;
+        background-color: transparent;
+        border: solid 3px;
+        border-color: #fff;
+        text-align: center;
+        cursor: pointer;
+        color: #fff;
+        margin-left: 11%;
+        text-transform: uppercase;
+        width: 262px;
+        height: 45px;
+    }
+
+    .Text-two {
+        z-index: 5;
+        font-size: 1.5rem;
+        font-family: Noto Sans;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 25px;
+    }
+
+    .BtnTwo {
+        font-size: 0.8rem;
+        font-family: Noto Sans;
+        font-weight: 400;
+        background-color: transparent;
+        border: solid 3px;
+        border-color: #fff;
+        text-align: center;
+        cursor: pointer;
+        color: #fff;
+        margin-left: 0%;
+        text-transform: uppercase;
+        width: 262px;
+        height: 45px;
+    }
+
 
     .navbar li {
         display: inline-block;
@@ -865,40 +1337,371 @@ footer {
         bottom: -20px;
     }
 
-    @media (max-width: 480px) {
-        .container {
-            margin: 0px 0px 0px 0px;
-        }
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 630px;
+        background-size: cover;
+        overflow: hidden;
 
-        .navbar li {
-            display: inline-block;
-            margin-right: 3px;
-            position: relative;
-        }
+    }
 
-        .navbar {
-            font-size: 3px;
-        }
+    .container-one-text {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--primary);
+        font-family: Noto Sans;
+    }
 
-        .logo {
-            width: 27px;
-            height: 32px;
-        }
+    .container-one-btn {
+        z-index: 2;
+        text-transform: uppercase;
+        background-color: transparent;
+        padding: 13px 30px;
+        top: 50%;
 
-        .header-name {
-            font-size: 16px;
-        }
+        font-size: 0.87rem;
+        font-family: LetoSans;
+        font-weight: 400;
+        border: solid 3px;
+        border-color: var(--primary);
+        text-align: center;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: 0.1s linear;
 
-        .header-line {
-            height: 56px;
-        }
+    }
 
-        .header-info>img {
-            margin-right: 12px;
-        }
+    .navbar {
+        text-transform: uppercase;
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        font-size: 0.87rem;
+        font-family: Roboto;
+        font-weight: 700;
+    }
 
-        .navbar li a::before {
-            bottom: -20px;
-        }
+    .header-line {
+        margin-left: 30px;
+        width: auto;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar li {
+        display: inline-block;
+        margin-right: 39px;
+        position: relative;
+    }
+
+    .navbar li:last-child {
+        margin-right: 38px;
+    }
+
+    .BackImg1 {
+        width: 54%;
+        height: 332px;
+        background-image: url(/img/largeOfficeBuildings.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .BackImg2 {
+        width: 54%;
+        height: 332px;
+        background-image: url(/img/houseIsolatedInTheField.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        clip-path: polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
+        top: 0;
+        right: 0;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .container-three {
+        display: flex;
+        height: 530px;
+    }
+
+    .infoText {
+        left: 56px;
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 56px;
+
+    }
+
+    .pictures {
+        position: relative;
+        width: 35%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .h1 {
+        font-size: 1.5rem;
+        font-family: Noto Sans;
+        font-weight: 500;
+        padding-bottom: 20px;
+    }
+
+    .infoText p {
+        font-family: Roboto;
+        font-size: 0.87rem;
+        font-weight: 400;
+
+    }
+
+    .text {
+        line-height: 24px;
+        margin-bottom: 25px;
+        width: 90%;
+    }
+
+    #brOne {
+        display: none;
+    }
+
+    #brTwo {
+        display: none;
+    }
+    .aboutBtn {
+        font-family: Noto Sans;
+        font-size: 0.87rem;
+        font-weight: 400;
+        text-align: center;
+        margin-top: -5px;
+        width: 131px;
+        height: 40px;
+        border: 3px solid var(--primary);
+        background-color: transparent;
+        color: var(--primary);
+        transition: 0.1s linear;
+    }
+
+    .mainPicture {
+        margin-left: 18%;
+        width: 371px;
+        height: 357px;
+        margin-top: 110px;
+    }
+
+    .backPicture {
+        margin-left: 8%;
+        width: 371px;
+        height: 357px;
+        margin-top: 90px;
+    }
+
+    .container-four {
+        height: 414px;
+        width: auto;
+        background-color: var(--primary);
+        display: flex;
+        justify-content: center;
+        background-position: bottom left 5px, bottom right 15px;
+        background-image: url(/img/contactsBack3.svg), url(/img/contactsBack4.svg);
+        background-repeat: no-repeat;
+
+    }
+
+    .inputText {
+        text-align: center;
+        font-family: Noto Sans;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 28px;
+        padding-left: 30px;
+        text-indent: 10px;
+    }
+
+    .nameInp {
+        width: 415px;
+        height: 50px;
+        color: var(--primary);
+        font-family: Roboto;
+        font-size: 0.87rem;
+        font-weight: 400;
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .phoneInp {
+        width: 415px;
+        height: 50px;
+        color: var(--primary);
+        font-family: Roboto;
+        font-size: 0.87rem;
+        font-weight: 400;
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .agreementText {
+        font-family: Roboto;
+        font-size: 0.87rem;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    .sendBtn {
+        color: #FEFEFE;
+        font-family: Noto Sans;
+        font-size: 0.87rem;
+        font-weight: 400;
+        width: 130px;
+        height: 40px;
+        text-align: center;
+        background-color: transparent;
+        border: 3px solid #fff;
+        transition: 0.1s linear;
+    }
+
+    .container-five {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+
+
+    }
+
+    .Map {
+        width: 100%;
+        height: 50%;
+    }
+
+    .mapInfo {
+        display: grid;
+
+        padding-left: 137px;
+        grid-template-columns: 1.1fr 1fr;
+        align-content: center;
+        grid-column-gap: 1px;
+
+    }
+    #MapText {
+        width: 100%;
+        font-family: Noto Sans;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 25px;
+        color: var(--primary);
+        margin-left: 20%;
+        margin-top: 30px;
+    }
+    .containerMapInfo {
+        width: 100%;
+        height: 278px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mapInfoContainerOne {
+        display: grid;
+        grid-template-columns: 8% 92%;
+        grid-template-rows: repeat(4, 40px);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        color: #000;
+        font-family: Roboto;
+        font-size: 0.87rem;
+        font-weight: 400;
+        margin-left: 80px;
+        margin-bottom: 20px;
+
+    }
+
+    .mapInfoContainerOne a {
+        text-decoration: underline;
+        color: black;
+    }
+
+
+    .mapInfoContainerTwo {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: repeat(4, 30px);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        color: #000;
+        font-family: Roboto;
+        font-size: 0.87rem;
+        font-weight: 400;
+        margin-right: 30px;
+        margin-top: 0px;
+    }
+    .mapInfoContainerTwo>span {
+        color: var(--primary);
+        font-weight: 500;
+    }
+    footer {
+        height: 220px;
+        background-image: url(/img/footerBack.svg);
+        background-color: var(--primary);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .footerText {
+        margin-left: 27px;
+        color: #fff;
+        font-family: Roboto;
+        font-size: 0.875rem;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        margin-right: 3px;
+        position: relative;
+    }
+
+    .navbar {
+        font-size: 3px;
+    }
+
+    .logo {
+        width: 27px;
+        height: 32px;
+    }
+
+    .header-name {
+        font-size: 16px;
+    }
+
+    .header-line {
+        height: 56px;
+    }
+
+    .header-info>img {
+        margin-right: 12px;
+    }
+
+    .navbar li a::before {
+        bottom: -20px;
     }
 }
+

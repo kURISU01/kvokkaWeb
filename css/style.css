@@ -116,7 +116,7 @@ a {
 
 .navbar li a::before {
     content: "";
-    bottom: -32px;
+    bottom: -31px;
     left: 0;
     position: absolute;
     width: 100%;
@@ -218,7 +218,7 @@ input[name="item"] {
     display: block;
     position: absolute;
     z-index: 2;
-    top: 33%;
+    top: 256px;
 }
 
 
